@@ -9,7 +9,7 @@ namespace Practice_7
             MakeEmptyArray();
             MaxValinArray();
             Array3el();
-            //BoxUnbox();
+            BoxUnbox();
         }
         static void MakeEmptyArray()
         {
@@ -51,15 +51,15 @@ namespace Practice_7
                 Console.WriteLine(array3[i]);
             }
         }
-        //static void BoxUnbox()
-        //{
-        //    Console.WriteLine("Введите число");
-        //    short a = Convert.ToInt16(Console.ReadLine());
-        //    object b = a;
-        //    sbyte c = (sbyte)b;
-        //    Console.WriteLine(b);
+        static void BoxUnbox()
+        {
+            Console.WriteLine("Введите число");
+            short a = Convert.ToInt16(Console.ReadLine());
+            object b = a;
+            sbyte c = (sbyte)Convert.ToInt16(a);
+            Console.WriteLine(b);
 
-        //}
+        }
         
     }
 }
